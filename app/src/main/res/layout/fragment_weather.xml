@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Weather"
+    android:background="#FFF"
+    android:layout_margin="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:id="@+id/queryLayout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" CITY"
+        android:textSize="15sp"
+        android:textColor="#696969"
+        android:id = "@+id/city"
+        android:layout_marginTop="8dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/city"
+        android:hint = "Enter City"
+        android:textSize="16sp"
+        android:textColor="#404040"
+        android:id="@+id/editCity"
+        android:inputType="text"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:text="Get Weather Details"
+        android:background="#fe3a10"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editCity"
+        android:padding="10dp"
+        android:layout_margin="15dp"
+        android:id="@+id/weatherButton"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_below="@+id/queryLayout"
+        android:id="@+id/progressBar">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:id="@+id/mainLayout"
+        android:layout_below="@+id/queryLayout"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="17sp"
+            android:id="@+id/temp"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="17sp"
+            android:id="@+id/min_temp"
+            android:layout_below="@+id/temp"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="17sp"
+            android:id="@+id/max_temp"
+            android:layout_below="@+id/min_temp"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="17sp"
+            android:id="@+id/pressure"
+            android:layout_below="@+id/max_temp"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="17sp"
+            android:id="@+id/humidity"
+            android:layout_below="@+id/pressure"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="17sp"
+            android:id="@+id/wind"
+            android:layout_below="@+id/humidity"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+</RelativeLayout>
+
+
+

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Profile">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" NAME"
+            android:textSize="15sp"
+            android:textColor="#696969"
+            android:id = "@+id/name"
+            android:layout_marginTop="8dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:hint = "Enter Name"
+            android:textSize="16sp"
+            android:textColor="#404040"
+            android:id="@+id/editname"
+            android:inputType="text"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:textSize="15sp"
+            android:textColor="#FF0000"
+            android:id = "@+id/nameError"
+            android:layout_below="@id/editname"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" AGE"
+            android:textSize="15sp"
+            android:textColor="#696969"
+            android:id = "@+id/age"
+            android:layout_below="@id/nameError"
+            android:layout_marginTop="15dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/age"
+            android:hint = "Enter Age"
+            android:textSize="16sp"
+            android:textColor="#404040"
+            android:id="@+id/editAge"
+            android:inputType="number"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:textSize="15sp"
+            android:textColor="#FF0000"
+            android:id = "@+id/ageError"
+            android:layout_below="@id/editAge"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" NUMBER"
+            android:textSize="15sp"
+            android:textColor="#696969"
+            android:id = "@+id/number"
+            android:layout_below="@id/ageError"
+            android:layout_marginTop="15dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/number"
+            android:hint = "Enter Number"
+            android:textSize="16sp"
+            android:textColor="#404040"
+            android:id="@+id/editNumber"
+            android:inputType="number"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:textSize="15sp"
+            android:textColor="#FF0000"
+            android:id = "@+id/numberError"
+            android:layout_below="@id/editNumber"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Submit"
+            android:textColor = "#FFF"
+            android:layout_marginTop="25dp"
+            android:background="#fe3a10"
+            android:layout_below="@id/numberError"
+            android:id="@+id/submitButton"
+            android:layout_marginBottom="50dp"/>
+
+
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>
